@@ -61,7 +61,7 @@ body{
 }
 
 .header-main{
-   /* background-color: transparent;*/
+   background-color: transparent;
 }
 
 .header_inner{
@@ -125,9 +125,48 @@ body{
     display: flex;
     justify-content: center;
     gap: 40px;
-
 }
 
 .main{
     flex-grow: 1;
 }
+
+.top{
+    color: white;
+    text-align: center;
+    padding-top: 105px;
+    padding-bottom: 50px;
+}
+
+
+.title{
+    
+    padding-bottom: 40px;
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.top_link{
+    background-color: #151515;
+    padding: 23px;
+    max-width: 430px;
+    width: 100%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 800px; /* например */
+}
+
+.swiper-slide {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+

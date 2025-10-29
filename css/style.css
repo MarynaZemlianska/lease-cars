@@ -188,7 +188,18 @@ body{
 }
 
 .swiper-pagination-bullet-active{
-    height: 6px;
+    height: 3px;
     background-color: white;
     margin: 0 15px !important;
+}
+
+.why-lease{
+    padding: 150px 0;
+}
+
+.section-title{
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
 }

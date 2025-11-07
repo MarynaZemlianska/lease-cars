@@ -203,3 +203,121 @@ body{
     font-weight: 700;
     text-align: center;
 }
+
+
+.why-lease_list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.why-lease_item-img{
+ margin-bottom: 30px;
+}
+
+.why-lease_item-title{
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.why-lease_item-text{
+    text-align: left;
+}
+
+.how-does{
+    padding-bottom: 150px;
+}
+
+.how-does_inner{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.how-does_title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.how-does_list{
+    padding: 50px 0 70px;
+    counter-reset: myCounter;
+}
+
+.how-does_item{
+    list-style-type: none;
+    width: 270px;
+    position: relative;
+    margin-left: auto;
+    padding-left: 240px;
+    box-sizing:content-box;
+    padding: 19px 0 19px 240px;
+    min-height: 63px;
+}
+
+.how-does_item + .how-does_item{
+    margin-top: 40px;
+}
+
+.how-does_item::before{
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: 700;
+    background-color: #0066FF;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.video{
+    padding-bottom: 150px;
+}
+
+.video_title{
+    margin-bottom: 20px;
+}
+
+.video_text{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.video_content{
+    margin: 0 auto;
+    display: block;
+}
+
+.important{
+    padding-bottom: 150px;
+}
+
+.important_title{
+    margin-bottom: 20px;
+}
+
+.important_text{
+    min-width: 580px;
+    margin: 0 auto 50px;
+}
+
+.important_list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.important_item-img{
+    margin-bottom: 20px;
+}
+
+

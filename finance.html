@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance — D&amp;M Leasing</title>
+    <meta name="description" content="Estimate your monthly lease and loan payments and explore D&amp;M financing options.">
+    <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header_inner">
+                    <a href="index.html" class="logo" aria-label="D&amp;M Leasing — home">
+                        <img src="images/logo.svg" alt="D&amp;M Leasing" class="logo_img">
+                    </a>
+                    <button class="menu_btn" aria-label="Open menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav class="menu">
+                        <ul class="menu_list">
+                            <li class="menu_list-item">
+                                <a href="new-cars.html" class="menu_list-link">NEW CARS</a>
+                            </li>
+                            <li class="menu_list-item">
+                                <a href="pre-owned-cars.html" class="menu_list-link">PRE-OWNED CARS</a>
+                            </li>
+                            <li class="menu_list-item">
+                                <a href="finance.html" class="menu_list-link menu_list-link--active" aria-current="page">FINANCE</a>
+                            </li>
+                            <li class="menu_list-item">
+                                <a href="lease-vs-buy.html" class="menu_list-link">LEASE VS BUY</a>
+                            </li>
+                            <li class="menu_list-item">
+                                <a href="contacts.html" class="menu_list-link">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="page-hero">
+                <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="container">
+                    <h1 class="page-hero_title">Financing Made Simple</h1>
+                    <p class="page-hero_text">Estimate your payment in seconds, compare leasing and financing side by side, and get pre-approved without affecting your credit score.</p>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title reveal">Payment calculator</h2>
+                    <p class="section-lead reveal">Move the sliders to see how price, down payment and term change your monthly payment.</p>
+                    <div class="calc">
+                        <form class="calc_form reveal" data-calc onsubmit="return false">
+                            <div class="field">
+                                <label for="price">Vehicle price <output data-for="price" data-format="money">$35,000</output></label>
+                                <input type="range" id="price" name="price" min="15000" max="90000" step="500" value="35000">
+                            </div>
+                            <div class="field">
+                                <label for="down">Down payment <output data-for="down" data-format="money">$3,000</output></label>
+                                <input type="range" id="down" name="down" min="0" max="15000" step="250" value="3000">
+                            </div>
+                            <div class="field">
+                                <label for="term">Lease term <output data-for="term">36 mo</output></label>
+                                <select id="term" name="term">
+                                    <option value="24">24 months</option>
+                                    <option value="36" selected>36 months</option>
+                                    <option value="48">48 months</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="apr">Interest rate (APR) <output data-for="apr" data-format="apr">6.0%</output></label>
+                                <input type="range" id="apr" name="apr" min="0" max="15" step="0.1" value="6">
+                            </div>
+                            <div class="field">
+                                <label for="residual">Residual value <output data-for="residual" data-format="pct">58%</output></label>
+                                <input type="range" id="residual" name="residual" min="40" max="70" step="1" value="58">
+                            </div>
+                        </form>
+                        <div class="calc_result reveal" aria-live="polite">
+                            <p class="calc_label">Estimated lease payment</p>
+                            <p class="calc_big"><span data-out="lease">$0</span><small>/mo</small></p>
+                            <div class="calc_row"><span>Loan payment (60 mo)</span><strong data-out="loan">$0</strong></div>
+                            <div class="calc_row"><span>You save monthly by leasing</span><strong data-out="save">$0</strong></div>
+                            <div class="calc_row"><span>Buyout price at lease end</span><strong data-out="residual">$0</strong></div>
+                            <div class="calc_row"><span>Total cost of lease</span><strong data-out="total">$0</strong></div>
+                            <a href="contacts.html?topic=finance" class="btn">Get pre-approved</a>
+                            <p class="calc_note">Estimates only, excluding taxes and fees. Your actual rate depends on credit history and lender approval.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--soft">
+                <div class="container">
+                    <h2 class="section-title reveal">Financing options</h2>
+                    <ul class="features" data-stagger>
+                        <li class="feature">
+                            <div class="feature_icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3"/></svg></div>
+                            <h3 class="feature_title">Lease</h3>
+                            <p class="feature_text">Lowest monthly payment, new car every 2–4 years, warranty always included. <a href="lease-vs-buy.html">Compare →</a></p>
+                        </li>
+                        <li class="feature">
+                            <div class="feature_icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h14M3 13l2-6h14l2 6v4h-2a2 2 0 0 1-4 0H9a2 2 0 0 1-4 0H3z"/></svg></div>
+                            <h3 class="feature_title">Auto loan</h3>
+                            <p class="feature_text">Own the car from day one with terms from 24 to 72 months and no mileage limits.</p>
+                        </li>
+                        <li class="feature">
+                            <div class="feature_icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 5 5 19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></div>
+                            <h3 class="feature_title">Special APR offers</h3>
+                            <p class="feature_text">Manufacturer rates from 0.9% APR on selected new models for well-qualified buyers.</p>
+                        </li>
+                        <li class="feature">
+                            <div class="feature_icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
+                            <h3 class="feature_title">Lease buyout</h3>
+                            <p class="feature_text">Love your current leased car? We’ll finance the buyout at a competitive rate.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title reveal">Get approved in 4 steps</h2>
+                    <ol class="steps" data-stagger>
+                        <li class="step"><h3 class="feature_title">Apply online</h3><p class="feature_text">A 5-minute form with your basic personal and income details.</p></li>
+                        <li class="step"><h3 class="feature_title">Soft credit check</h3><p class="feature_text">We check your credit without affecting your score.</p></li>
+                        <li class="step"><h3 class="feature_title">Compare offers</h3><p class="feature_text">Receive rates from several lenders and choose the best one.</p></li>
+                        <li class="step"><h3 class="feature_title">Sign &amp; drive</h3><p class="feature_text">E-sign your contract and pick up the car or have it delivered.</p></li>
+                    </ol>
+                </div>
+            </section>
+            <section class="section section--soft">
+                <div class="container">
+                    <h2 class="section-title reveal">Typical rates by credit score</h2>
+                    <div class="table-wrap reveal">
+                        <table class="compare">
+                            <thead>
+                                <tr><th>Credit score</th><th>Tier</th><th>New car APR</th><th>Used car APR</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>781 – 850</td><td>Super prime</td><td>from 4.9%</td><td>from 6.5%</td></tr>
+                                <tr><td>661 – 780</td><td>Prime</td><td>from 6.4%</td><td>from 8.9%</td></tr>
+                                <tr><td>601 – 660</td><td>Near prime</td><td>from 9.5%</td><td>from 13.5%</td></tr>
+                                <tr><td>501 – 600</td><td>Subprime</td><td>from 12.9%</td><td>from 18.9%</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="tabs_note" style="margin-top:20px">Indicative ranges for illustration; actual rates are set by the lender.</p>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="cta reveal">
+                        <div>
+                            <h2 class="cta_title">Know your budget before you shop</h2>
+                            <p class="cta_text">Pre-approval takes about 15 minutes and is valid for 30 days at any of our partner dealers.</p>
+                        </div>
+                        <a href="contacts.html?topic=finance" class="btn btn--light" data-magnetic>Apply now</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <nav class="footer_menu">
+                    <ul class="footer_menu-list">
+                        <li class="footer_menu-item">
+                            <p class="footer_menu-title">Products</p>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="pre-owned-cars.html" class="footer_menu-link">Used</a>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="new-cars.html" class="footer_menu-link">New</a>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="contacts.html?topic=trade" class="footer_menu-link">Sell your car</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_menu-list">
+                        <li class="footer_menu-item">
+                            <p class="footer_menu-title">Resources</p>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="new-cars.html#blog" class="footer_menu-link">Blog</a>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="lease-vs-buy.html#faq" class="footer_menu-link">FAQ</a>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="contacts.html" class="footer_menu-link">Contact us</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_menu-list">
+                        <li class="footer_menu-item">
+                            <p class="footer_menu-title">Work With Us</p>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="contacts.html" class="footer_menu-link">Dealers</a>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="contacts.html" class="footer_menu-link">Partners</a>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="finance.html" class="footer_menu-link">Finance</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_menu-list">
+                        <li class="footer_menu-item">
+                            <p class="footer_menu-title">About</p>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="index.html#why" class="footer_menu-link">About us</a>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="index.html#how" class="footer_menu-link">How leasing works</a>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="contacts.html" class="footer_menu-link">Careers</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="app">
+                    <li class="app_item">
+                        <a href="#" class="app item-link" aria-label="Download on the App Store">
+                            <img class="app_item-img" src="images/appstore.svg" alt="App Store">
+                        </a>
+                    </li>
+                    <li class="app_item">
+                        <a href="#" class="app item-link" aria-label="Get it on Google Play">
+                            <img class="app_item-img" src="images/googleplay.svg" alt="Google Play">
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer_copy">
+                    <p class="footer_copy-text">
+                        For questions about the D&amp;M Leasing service please call 1-888-878-3227.
+                        Certified Dealers are contractually obligated to meet certain customer service
+                        requirements and complete the D&amp;M Dealer Certification Program.
+                    </p>
+                    <p class="footer_copy-text">
+                        D&amp;M Leasing does not broker, sell, or lease motor vehicles directly.
+                        Unless otherwise noted, all vehicles shown on this website are offered by licensed
+                        motor vehicle dealers and are subject to prior sale. Payments shown are estimates.
+                    </p>
+                </div>
+                <nav class="copy_nav">
+                    <ul class="copy_nav-list">
+                        <li class="copy_nav-item">
+                            <a href="#" class="copy_nav-link">Terms of Service</a>
+                        </li>
+                        <li class="copy_nav-item">
+                            <a href="#" class="copy_nav-link">Privacy Policy</a>
+                        </li>
+                        <li class="copy_nav-item">
+                            <a href="#" class="copy_nav-link">Do Not Sell My Personal Information</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

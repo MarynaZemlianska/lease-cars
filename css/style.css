@@ -569,6 +569,7 @@ form{
 @media (max-width: 860px){
     .menu_btn{
         display: flex;
+        margin-left: auto;
     }
 
     .menu_btn,
